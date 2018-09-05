@@ -1,0 +1,27 @@
+
+D:\gh\Windows-appsample-photo-editor\PhotoEditor>msbuild PhotoEditor.vcxproj
+.NET Framework 向け Microsoft (R) Build Engine バージョン 15.8.168+ga8fba1ebd7
+Copyright (C) Microsoft Corporation.All rights reserved.
+
+2018/09/06 8:47:55 にビルドを開始しました。
+ノード 1 上のプロジェクト "D:\gh\Windows-appsample-photo-editor\PhotoEditor\PhotoEditor.vcxproj" (既定のターゲット)。
+D:\gh\Windows-appsample-photo-editor\PhotoEditor\PhotoEditor.vcxproj(174,5): error : This project references NuGet package(s) that are missing on this compu
+ter. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is ..\packages\W
+in2D.uwp.1.21.0\build\native\Win2D.uwp.targets.
+プロジェクト "D:\gh\Windows-appsample-photo-editor\PhotoEditor\PhotoEditor.vcxproj" (既定のターゲット) のビルドが終了しました -- 失敗。
+
+
+ビルドに失敗しました。
+
+"D:\gh\Windows-appsample-photo-editor\PhotoEditor\PhotoEditor.vcxproj" (既定のターゲット) (1) ->
+(EnsureNuGetPackageBuildImports ターゲット) ->
+  D:\gh\Windows-appsample-photo-editor\PhotoEditor\PhotoEditor.vcxproj(174,5): error : This project references NuGet package(s) that are missing on this com
+puter. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is ..\packages
+\Win2D.uwp.1.21.0\build\native\Win2D.uwp.targets.
+
+    0 個の警告
+    1 エラー
+
+経過時間 00:00:00.22
+
+D:\gh\Windows-appsample-photo-editor\PhotoEditor>
