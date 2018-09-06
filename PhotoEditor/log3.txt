@@ -1,0 +1,71 @@
+
+D:\gh\Windows-appsample-photo-editor\PhotoEditor>msbuild PhotoEditor.vcxproj
+.NET Framework 向け Microsoft (R) Build Engine バージョン 15.8.168+ga8fba1ebd7
+Copyright (C) Microsoft Corporation.All rights reserved.
+
+2018/09/06 9:26:03 にビルドを開始しました。
+ノード 1 上のプロジェクト "D:\gh\Windows-appsample-photo-editor\PhotoEditor\PhotoEditor.vcxproj" (既定のターゲット)。
+GetInstalledSDKLocations:
+  "UAP, 10.0.17134.0" をターゲットとする SDK を検索しています。
+  "Windows, 8.1" をターゲットとする SDK を検索しています。
+ResolveSDKReferences:
+    SDK マニフェスト ファイル "C:\Program Files (x86)\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\SDKManifest.xml" を読み取っています 。
+    ターゲットの構成およびアーキテクチャ "Debug|x86"
+    SDK マニフェストで "FrameworkIdentity" 属性 "FrameworkIdentity-Debug-x86" が見つかりませんでした。
+    SDK マニフェストで "FrameworkIdentity" 属性 "Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.26726.0, Publisher = 'CN=Microsoft Corporation, O=Microsoft
+  Corporation, L=Redmond, S=Washington, C=US'" が見つかりました。
+    SDK マニフェストで "APPX" の location 属性 "AppX-Debug-x86=.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx" が見つかりました。
+    SDK マニフェストで "APPX" の location 属性 "AppX-Debug-x64=.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx" が見つかりました。
+    SDK マニフェストで "APPX" の location 属性 "AppX-Debug-ARM=.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx" が見つかりました。
+    SDK マニフェストで "APPX" の location 属性 "AppX-Debug-ARM64=.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx" が見つかりました。
+ExpandSDKReferences:
+  SDK 参照 "Microsoft.VCLibs, Version=14.0" を "C:\Program Files (x86)\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\" から列挙していま す。
+InitializeBuildStatus:
+  "Debug\PhotoEditor.tlog\unsuccessfulbuild" のタッチ タスクを実行しています。
+Midl:
+  すべての出力が最新のものです。
+  C:\Program Files (x86)\Windows Kits\10\bin\10.0.17134.0\x86\midl.exe /metadata_dir "C:\Program Files (x86)\Windows Kits\10\References\10.0.17134.0\windows
+  .foundation.foundationcontract\3.0.0.0" /winrt /W1 /nologo /char signed /env win32 /winmd "D:\gh\Windows-appsample-photo-editor\PhotoEditor\Debug\PhotoEdi
+  tor\DetailPage.winmd" /h "DetailPage_h.h" /tlb "Debug\PhotoEditor.tlb" /enum_class /ns_prefix /target "NT60" DetailPage.idl
+  MIDLRT Processing D:\gh\Windows-appsample-photo-editor\PhotoEditor\DetailPage.idl
+  DetailPage.idl
+  MIDLRT Processing .\Photo.idl
+  Photo.idl
+.\Photo.idl(30): error MIDL2011: [msg]unresolved type declaration [context]: Windows.Storage.FileProperties.ImageProperties [ Parameter 'props' of Procedure
+ 'Photo' ( RuntimeClass 'PhotoEditor.Photo' ) ] [D:\gh\Windows-appsample-photo-editor\PhotoEditor\PhotoEditor.vcxproj]
+.\Photo.idl(30): error MIDL2011: [msg]unresolved type declaration [context]: Windows.Storage.StorageFile [ Parameter 'imageFile' of Procedure 'Photo' ( Runt
+imeClass 'PhotoEditor.Photo' ) ] [D:\gh\Windows-appsample-photo-editor\PhotoEditor\PhotoEditor.vcxproj]
+.\Photo.idl(31): error MIDL2011: [msg]unresolved type declaration [context]: Windows.Storage.StorageFile [ Property 'ImageFile' ( RuntimeClass 'PhotoEditor.
+Photo' ) ] [D:\gh\Windows-appsample-photo-editor\PhotoEditor\PhotoEditor.vcxproj]
+.\Photo.idl(32): error MIDL2011: [msg]unresolved type declaration [context]: Windows.Storage.FileProperties.ImageProperties [ Property 'ImageProperties' ( R
+untimeClass 'PhotoEditor.Photo' ) ] [D:\gh\Windows-appsample-photo-editor\PhotoEditor\PhotoEditor.vcxproj]
+.\Photo.idl(28): error MIDL2011: [msg]unresolved type declaration [context]: Windows.UI.Xaml.Data.INotifyPropertyChanged [ RuntimeClass 'PhotoEditor.Photo'
+ ] [D:\gh\Windows-appsample-photo-editor\PhotoEditor\PhotoEditor.vcxproj]
+D:\gh\Windows-appsample-photo-editor\PhotoEditor\DetailPage.idl(30): error MIDL2011: [msg]unresolved type declaration [context]: Windows.UI.Xaml.Controls.Pa
+ge [ RuntimeClass 'PhotoEditor.DetailPage'  ] [D:\gh\Windows-appsample-photo-editor\PhotoEditor\PhotoEditor.vcxproj]
+プロジェクト "D:\gh\Windows-appsample-photo-editor\PhotoEditor\PhotoEditor.vcxproj" (既定のターゲット) のビルドが終了しました -- 失敗。
+
+
+ビルドに失敗しました。
+
+"D:\gh\Windows-appsample-photo-editor\PhotoEditor\PhotoEditor.vcxproj" (既定のターゲット) (1) ->
+(Midl ターゲット) ->
+  .\Photo.idl(30): error MIDL2011: [msg]unresolved type declaration [context]: Windows.Storage.FileProperties.ImageProperties [ Parameter 'props' of Procedu
+re 'Photo' ( RuntimeClass 'PhotoEditor.Photo' ) ] [D:\gh\Windows-appsample-photo-editor\PhotoEditor\PhotoEditor.vcxproj]
+  .\Photo.idl(30): error MIDL2011: [msg]unresolved type declaration [context]: Windows.Storage.StorageFile [ Parameter 'imageFile' of Procedure 'Photo' ( Ru
+ntimeClass 'PhotoEditor.Photo' ) ] [D:\gh\Windows-appsample-photo-editor\PhotoEditor\PhotoEditor.vcxproj]
+  .\Photo.idl(31): error MIDL2011: [msg]unresolved type declaration [context]: Windows.Storage.StorageFile [ Property 'ImageFile' ( RuntimeClass 'PhotoEdito
+r.Photo' ) ] [D:\gh\Windows-appsample-photo-editor\PhotoEditor\PhotoEditor.vcxproj]
+  .\Photo.idl(32): error MIDL2011: [msg]unresolved type declaration [context]: Windows.Storage.FileProperties.ImageProperties [ Property 'ImageProperties' (
+ RuntimeClass 'PhotoEditor.Photo' ) ] [D:\gh\Windows-appsample-photo-editor\PhotoEditor\PhotoEditor.vcxproj]
+  .\Photo.idl(28): error MIDL2011: [msg]unresolved type declaration [context]: Windows.UI.Xaml.Data.INotifyPropertyChanged [ RuntimeClass 'PhotoEditor.Photo
+'  ] [D:\gh\Windows-appsample-photo-editor\PhotoEditor\PhotoEditor.vcxproj]
+  D:\gh\Windows-appsample-photo-editor\PhotoEditor\DetailPage.idl(30): error MIDL2011: [msg]unresolved type declaration [context]: Windows.UI.Xaml.Controls.
+Page [ RuntimeClass 'PhotoEditor.DetailPage'  ] [D:\gh\Windows-appsample-photo-editor\PhotoEditor\PhotoEditor.vcxproj]
+
+    0 個の警告
+    6 エラー
+
+経過時間 00:00:00.70
+
+D:\gh\Windows-appsample-photo-editor\PhotoEditor>
