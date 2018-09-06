@@ -1,0 +1,14 @@
+
+D:\gh\Windows-appsample-photo-editor\PhotoEditor>nuget install packages.config
+Feeds used:
+  https://api.nuget.org/v3/index.json
+  C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
+
+Restoring NuGet package Win2D.uwp.1.21.0.
+  GET https://api.nuget.org/v3-flatcontainer/win2d.uwp/1.21.0/win2d.uwp.1.21.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/win2d.uwp/1.21.0/win2d.uwp.1.21.0.nupkg 655ms
+Installing Win2D.uwp 1.21.0.
+Adding package 'Win2D.uwp.1.21.0' to folder 'D:\gh\Windows-appsample-photo-editor\PhotoEditor'
+Added package 'Win2D.uwp.1.21.0' to folder 'D:\gh\Windows-appsample-photo-editor\PhotoEditor'
+
+D:\gh\Windows-appsample-photo-editor\PhotoEditor>
